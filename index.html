@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Đăng ký khóa học</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="">
+					<img src="/images/logo1.png" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="form_sign">
+				<h2>Đăng ký khóa học</h2>
+				<form action="#" class="form" onsubmit="return check_submit()">
+					<div class="form_item">
+						<label for="">Họ và tên</label>
+						<input type="text" name="hoten" class="check_null" placeholder="NGUYEN HUY HOANG...">
+						<div class="error err_hoten">
+							<p>Họ tên không được để trống</p> <span>(*)</span>
+						</div>
+					</div>
+					<div class="form_item">
+						<label for="">Email</label>
+						<input type="text" name="email" class="check_null" placeholder="bkap@bachkhoa-aptech.com...">
+						<div class="error err_email">
+							<p>Email không được để trống</p> <span>(*)</span>
+						</div>
+					</div>
+					<div class="form_item">
+						<label for="">Số điện thoại</label>
+						<input type="text" name="sdt" class="check_null" placeholder="0986125486...">
+						<div class="error err_sdt">
+							<p>Số điện thoại không được để trống</p> <span>(*)</span>
+						</div>
+					</div>
+					<div class="form_item">
+						<label for="">Khóa học</label>
+						<div class="select">
+							<select name="khoahoc" class="check_null" id="">
+								<option value="">--Chọn khóa học--</option>
+								<option value="java">Lập trình web với java</option>
+								<option value="php">Lập trình web PHP & MySQl</option>
+								<option value="asp">Lập trình web asp.net MVC 5</option>
+							</select>
+						</div>
+						<div class="error err_khoahoc">
+							<p>Khóa học không được để trống</p> <span>(*)</span>
+						</div>
+					</div>
+					<div class="form_item">
+						<label for="">Giới tính</label>
+						<div class="gender">
+							<label for="">
+								<span>Nam</span>
+								<input type="radio" name="gender" value="nam" id="nam">
+							</label>
+							<label for="">
+								<span>Nữ</span>
+								<input type="radio" name="gender" value="nam" id="nam">
+							</label>
+						</div>
+					</div>
+					<div class="form_item">
+						<label for="">Sở thích</label>
+						<div class="check-box">
+							<input type="checkbox" name="box" value="thethao">Thể thao
+							<input type="checkbox" name="box" value="dulich">Du lịch
+							<input type="checkbox" name="box" value="laptrinh">Lập trình
+						</div>
+					</div>
+					<div class="form_item">
+						<label for="">Ghi chú</label>
+						<div class="text_area">
+							<textarea name="ghichu" id=""></textarea>
+						</div>
+
+					</div>
+			</div>
+			<div class="button">
+				<div class="sign_in">
+					<button type="submit">Đăng kí</button>
+				</div>
+				<div class="reset">
+					<button type="reset">Làm lại</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<h2><a href="">hệ thống đào tạo CNTT quốc tế bachkhoa-aptech</a></h2>
+			<p><a href=""> 15 năm hoạt động - 30.000 HV đã tốt nghiệp - Chương trình đào tạo chuẩn quốc tế</a></p>
+		</div>
+	</div>
+</body>
+
+</html>
